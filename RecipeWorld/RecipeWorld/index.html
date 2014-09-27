@@ -8,7 +8,7 @@
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="https://bs-static.cdn.telerik.com/1.2.5/everlive.all.min.js"></script>
     
 </head>
 <body>
@@ -20,12 +20,36 @@
             </div>
         </header>
 
-        <footer data-role="footer">
+        <footer data-role="footer"></footer>
+    </div>
 
-        </footer>
+    <div data-role="view" data-layout="default" id="login" data-title="Salad World" data-model="loginViewModel">
+            <ul data-role="listview" data-style="inset">
+                <li class="username">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" placeholder="Username" required validationmessage="Username is required!" />
+                </li>
+                <li class="password">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" placeholder="Password" required validationmessage="Password is required!" />
+                </li>
+            </ul>
+        <ol data-role="listview" class="group-wrp">
+            <li>
+                <span id="login" data-role="touch" >
+                    <button data-bind="click: login" data-role="button" class="btn btn-login">Login</button>
+                </span>
+            </li>
+            <li>
+                <span id="signup" data-role="touch" data-bind="events: { tap: signup }">
+                    <a data-role="button" class="btn btn-signup">Sign Up</a>
+                </span>
+            </li>
+        </ol>
     </div>
-    <div data-role="view" data-layout="default" data-title="Recipe World">
-        Some content
-    </div>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/recipes.js"></script>
+    <script src="scripts/login.js"></script>
 </body>
 </html>

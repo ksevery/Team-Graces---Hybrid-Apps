@@ -1,0 +1,15 @@
+<div data-role="view" data-layout="default" data-model="listView">
+    <ul data-bind="source: recipes" data-role="listview" data-template="recipesTemplate">
+    </ul>
+</div>
+
+<script type="text/x-kendo-template" id="recipesTemplate">
+    <div data-role="touch" data-bind="events: { tap: recipeSelected }" class="cf">
+        <div class="recipe-image">
+            <img data-bind="attr:{src: Recipe().PictureUrl}" />
+        </div>
+        <div class="recipe-content">
+            <h2 class="recipe-name">#: Recipe().DisplayName #</h2>
+        </div>
+    </div>
+</script>

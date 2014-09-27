@@ -17,27 +17,28 @@
   "WP8Publisher": "",
   "WP8Capabilities": [],
   "WP8Requirements": [],
-  "WP8PublisherID": "",
-  "WP8ProductID": "",
+  "WP8PublisherID": "{7c9bc400-3748-4eb7-b309-58068f59e9f1}",
+  "WP8ProductID": "{9c353659-aaaa-40ea-93c1-39b5e766e548}",
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "3.5.0",
   "CorePlugins": [
     "org.apache.cordova.battery-status",
     "org.apache.cordova.camera",
+    "org.apache.cordova.media-capture",
     "org.apache.cordova.console",
     "org.apache.cordova.contacts",
     "org.apache.cordova.device",
     "org.apache.cordova.device-motion",
     "org.apache.cordova.device-orientation",
-    "org.apache.cordova.dialogs",
     "org.apache.cordova.file",
     "org.apache.cordova.file-transfer",
     "org.apache.cordova.geolocation",
     "org.apache.cordova.globalization",
     "org.apache.cordova.inappbrowser",
     "org.apache.cordova.media",
-    "org.apache.cordova.media-capture",
     "org.apache.cordova.network-information",
+    "org.apache.cordova.dialogs",
+    "com.phonegap.plugins.PushPlugin",
     "org.apache.cordova.splashscreen",
     "org.apache.cordova.statusbar",
     "org.apache.cordova.vibration"
@@ -73,5 +74,10 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "Framework": "Cordova"
+  "Framework": "Cordova",
+  "CordovaPluginVariables": {
+    "com.telerik.mobiletesting": {
+      "IOS_APP_URL": ""
+    }
+  }
 }
