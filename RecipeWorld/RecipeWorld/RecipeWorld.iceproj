@@ -167,6 +167,7 @@
     <Content Include="Plugins\cordova-plugin-dialogs-master\www\notification.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="scripts\accelerometer.js" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\camera.js" />
     <Content Include="scripts\login.js" />
