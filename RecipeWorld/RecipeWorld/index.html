@@ -3,13 +3,15 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
+    <link href="styles/main.css" rel="stylesheet"/>
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
 
     <script src="cordova.js"></script>
-    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/jquery-2.1.1.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="https://bs-static.cdn.telerik.com/1.2.5/everlive.all.min.js"></script>
-    
+
+    <script src="scripts/app.js"></script>
 </head>
 <body>
     <div data-role="layout" id="default" data-id="default">
@@ -23,7 +25,7 @@
         <footer data-role="footer"></footer>
     </div>
 
-    <div data-role="view" data-layout="default" id="login" data-title="Salad World" data-model="loginViewModel">
+    <div data-role="view" data-layout="default" id="login" data-title="Salad World" data-model="app.Login">
             <ul data-role="listview" data-style="inset">
                 <li class="username">
                     <label for="loginUsername">Username:</label>
@@ -37,7 +39,7 @@
         <ol data-role="listview" class="group-wrp">
             <li>
                 <span id="login" data-role="touch" >
-                    <button data-bind="click: login" data-role="button" class="btn btn-login">Login</button>
+                    <button data-bind="click: login" id="login-btn" data-role="button" class="btn btn-login">Login</button>
                 </span>
             </li>
             <li>
@@ -48,7 +50,6 @@
         </ol>
     </div>
 
-    <script src="scripts/app.js"></script>
     <script src="scripts/recipes.js"></script>
     <script src="scripts/login.js"></script>
 </body>

@@ -1,6 +1,6 @@
-/*#loginUsername, #loginPassword {
-    display: block;
-    text-align: center;
-    margin: .6em .8em;
-    font-size: 1.2em;
-}*/
+.recipe-image img{
+    width: 50%;
+    height: 30%;
+    float: left;
+    border-radius: 0.3rem;
+}

@@ -1,15 +1,14 @@
-<div data-role="view" data-layout="default" data-model="listView">
-    <ul data-bind="source: recipes" data-role="listview" data-template="recipesTemplate">
-    </ul>
+<div data-role="view" data-layout="default" data-model="app.Recipes">
+    <ul data-bind="source: recipes" id="recipes" data-template="recipesTemplate" data-role="listview"></ul>
 </div>
 
-<script type="text/x-kendo-template" id="recipesTemplate">
+<script type="text/x-kendo-template" data-id="recipesTemplate" id="recipesTemplate">
     <div data-role="touch" data-bind="events: { tap: recipeSelected }" class="cf">
         <div class="recipe-image">
-            <img data-bind="attr:{src: Recipe().PictureUrl}" />
+            <img data-bind="attr:{src: PictureUrl}"/>
         </div>
         <div class="recipe-content">
-            <h2 class="recipe-name">#: Recipe().DisplayName #</h2>
+            <h2 class="recipe-name" data-bind="text: Name"></h2>
         </div>
     </div>
 </script>

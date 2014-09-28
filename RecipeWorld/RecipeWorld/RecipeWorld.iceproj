@@ -26,6 +26,147 @@
     <Content Include="cordova.ios.js" />
     <Content Include="cordova.wp8.js" />
     <Content Include="index.html" />
+    <Content Include="kendo\js\jquery-2.1.1.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="kendo\js\jquery-2.1.1.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="kendo\js\jquery-2.1.1.min.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\.gitignore">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\CONTRIBUTING.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\de\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\es\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\fr\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\it\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\ja\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\ko\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\pl\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\ru\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\doc\zh\index.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\NOTICE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\plugin.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\RELEASENOTES.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\android\Notification.java">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\blackberry10\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\firefoxos\notification.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\ios\CDVNotification.bundle\beep.wav">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\ios\CDVNotification.h">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\ios\CDVNotification.m">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\ubuntu\notification.cpp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\ubuntu\notification.h">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\ubuntu\notification.qml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\windows8\NotificationProxy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\wp\notification-beep.wav">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\wp\Notification.cs">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\wp\NotificationBox.xaml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\src\wp\NotificationBox.xaml.cs">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\tests\plugin.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\tests\tests.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\android\notification.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\blackberry10\beep.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\blackberry10\notification-beep.wav">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\firefoxos\danger-press.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\firefoxos\danger.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\firefoxos\default.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\firefoxos\gradient.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\firefoxos\notification.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\firefoxos\pattern.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\firefoxos\recommend.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugins\cordova-plugin-dialogs-master\www\notification.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="scripts\app.js" />
     <Content Include="scripts\login.js" />
     <Content Include="scripts\recipes.js" />
@@ -91,6 +232,31 @@
     <Folder Include="kendo\styles\" />
     <Folder Include="kendo\styles\images\" />
     <Folder Include="kendo\typescript\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\de\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\es\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\fr\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\it\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\ja\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\ko\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\pl\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\ru\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\doc\zh\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\src\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\src\android\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\src\blackberry10\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\src\firefoxos\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\src\ios\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\src\ios\CDVNotification.bundle\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\src\ubuntu\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\src\windows8\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\src\wp\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\tests\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\www\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\www\android\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\www\blackberry10\" />
+    <Folder Include="Plugins\cordova-plugin-dialogs-master\www\firefoxos\" />
     <Folder Include="styles\" />
     <Folder Include="scripts\" />
     <Folder Include="styles\images\" />

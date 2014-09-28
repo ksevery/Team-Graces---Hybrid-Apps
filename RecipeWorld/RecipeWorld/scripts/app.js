@@ -1,10 +1,21 @@
-var app = (function (win) {
-    var showAlert = function(message, title, callback) {
+window.app = (function (win) {
+    var emptyGuid = '00000000-0000-0000-0000-000000000000';
+    var onDeviceReady = function () {
+        // Handle "backbutton" event
+        document.addEventListener('backbutton', onBackKeyDown, false);
+
+        navigator.splashscreen.hide();
+        fixViewResize();
+    };
+
+    document.addEventListener('deviceready', onDeviceReady, true);
+
+    var showAlert = function (message, title, callback) {
         navigator.notification.alert(message, callback || function () {
         }, title, 'OK');
     };
 
-    var showError = function(message) {
+    var showError = function (message) {
         showAlert(message, 'Error occured');
     };
 
@@ -18,12 +29,6 @@ var app = (function (win) {
         return true;
     });
 
-    // Global confirm dialog
-    var showConfirm = function(message, title, callback) {
-        navigator.notification.confirm(message, callback || function () {
-        }, title, ['OK', 'Cancel']);
-    };
-
     var isNullOrEmpty = function (value) {
         return typeof value === 'undefined' || value === null || value === '';
     };
@@ -35,7 +40,7 @@ var app = (function (win) {
 
     var fixViewResize = function () {
         if (device.platform === 'iOS') {
-            setTimeout(function() {
+            setTimeout(function () {
                 $(document.body).height(window.innerHeight);
             }, 10);
         }
@@ -59,21 +64,15 @@ var app = (function (win) {
         }, 'Exit', ['OK', 'Cancel']);
     };
 
-    var onDeviceReady = function () {
-        // Handle "backbutton" event
-        document.addEventListener('backbutton', onBackKeyDown, false);
+    var el = new Everlive({
+        apiKey: 'UaQVFmYbtMPgqUG0',
+        scheme: 'https',
+        token: window.token || ''
+    });
 
-        navigator.splashscreen.hide();
-        fixViewResize();
-    };
-
-    document.addEventListener('deviceready', onDeviceReady, false);
-
-    var el = new Everlive('UaQVFmYbtMPgqUG0');
     var AppHelper = {
-
         // Return user profile picture url
-        resolveProfilePictureUrl: function (id) {
+        resolveRecipePictureUrl: function (id) {
             if (id && id !== emptyGuid) {
                 return el.Files.getDownloadUrl(id);
             } else {
@@ -109,11 +108,11 @@ var app = (function (win) {
     return {
         showAlert: showAlert,
         showError: showError,
-        showConfirm: showConfirm,
+        //showConfirm: showConfirm,
         isKeySet: isKeySet,
         mobileApp: mobileApp,
         helper: AppHelper,
         everlive: el,
-        getYear: getYear
+        //getYear: getYear
         }
 })(window);
