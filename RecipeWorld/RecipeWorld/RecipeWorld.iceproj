@@ -170,11 +170,13 @@
     <Content Include="scripts\app.js" />
     <Content Include="scripts\login.js" />
     <Content Include="scripts\recipes.js" />
+    <Content Include="scripts\signup.js" />
     <Content Include="styles\images\default.jpg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="styles\main.css" />
     <Content Include="views\recipes-view.html" />
+    <Content Include="views\signup-view.html" />
     <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />

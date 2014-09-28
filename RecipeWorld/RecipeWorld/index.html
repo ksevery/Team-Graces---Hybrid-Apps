@@ -21,8 +21,10 @@
                 <button data-role="backbutton" data-align="left">Back</button>
             </div>
         </header>
-
-        <footer data-role="footer"></footer>
+        
+        <footer data-role="footer">
+            <div id="console"></div>
+        </footer>
     </div>
 
     <div data-role="view" data-layout="default" id="login" data-title="Salad World" data-model="app.Login">
@@ -43,8 +45,8 @@
                 </span>
             </li>
             <li>
-                <span id="signup" data-role="touch" data-bind="events: { tap: signup }">
-                    <a data-role="button" class="btn btn-signup">Sign Up</a>
+                <span id="signup" data-role="touch">
+                    <a data-role="button" href="views/signup-view.html" class="btn btn-signup">Sign Up</a>
                 </span>
             </li>
         </ol>
@@ -52,5 +54,6 @@
 
     <script src="scripts/recipes.js"></script>
     <script src="scripts/login.js"></script>
+    <script src="scripts/signup.js"></script>
 </body>
 </html>

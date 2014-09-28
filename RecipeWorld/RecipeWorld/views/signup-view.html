@@ -1,0 +1,21 @@
+<div data-role="view" data-layout="default" data-model="app.Signup" data-init="app.Signup.init" data-show="app.Signup.show" data-title="Sign Up">
+    <form id="signUp">
+        <ul id="signup-form" data-role="listview" data-style="inset">
+            <li>
+                <label for="signupEmail">Email: </label>
+                <input type="email" id="signupEmail" data-bind="value: Email" placeholder="Email" />
+            </li>
+            <li>
+                <label for="signupUsername">Username: </label>
+                <input type="text" id="signupUsername" data-bind="value: Username" placeholder="Username" required />
+            </li>
+            <li>
+                <label for="signupPassword">Password: </label>
+                <input type="password" id="signupPassword" data-bind="value: Password" placeholder="Password" required />
+            </li>
+        </ul>
+    </form>
+    <div id="signupBtnWrp" class="signup-btn-wrp disabled">
+        <a class="btn btn-signup" data-role="button" data-bind="click: signup">Register</a>
+    </div>
+</div>
