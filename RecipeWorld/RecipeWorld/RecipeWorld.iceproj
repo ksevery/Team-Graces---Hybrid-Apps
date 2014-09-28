@@ -170,6 +170,7 @@
     <Content Include="scripts\accelerometer.js" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\camera.js" />
+    <Content Include="scripts\connection.js" />
     <Content Include="scripts\login.js" />
     <Content Include="scripts\recipes.js" />
     <Content Include="scripts\signup.js" />
