@@ -5,13 +5,13 @@ app.Recipe = (function () {
     var $productsContainer,
         listScroller;
     var recipeModel = (function () {
-        var recipeUid,
+        var recipeId,
             recipe,
             $recipePicture;
 
         var init = function () {
             $productsContainer = $('#recipeProducts');
-            $recipePicture = $('#recipe-image');
+            $recipePicture = $('#recipe-image-products');
         };
 
         var show = function (e) {

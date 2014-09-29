@@ -17,9 +17,13 @@ app.Products = (function () {
                     field: 'Recipes',
                     defaultValue: null
                 },
-                PictureUrl: function () {
-                    return app.helper.resolvePictureUrl(this.get('Picture'));
+                Picture: {
+                    field: 'Picture',
+                    defaultValue: null
                 }
+            },
+            PictureUrl: function () {
+                return app.helper.resolvePictureUrl(this.get('Picture'));
             }
         }
 

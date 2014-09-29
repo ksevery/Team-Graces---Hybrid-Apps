@@ -5,6 +5,15 @@ app.Recipes = (function () {
         var currentRecipe = kendo.observable({ data: null });
         var recipesData = [];
 
+        function getDataIds(products) {
+            var ids = [];
+            for (var i = 0; i < products.length; i++) {
+                ids.push(products[i].Id);
+            }
+
+            return ids;
+        }
+
         var recipeModel = {
 
             id: 'Id',
@@ -38,15 +47,13 @@ app.Recipes = (function () {
                 var productsIds = this.get('Products');
 
                 var products = [];
+                var productsData = app.Products.products.data();
+                var productsDataIds = getDataIds(productsData);
                 for (var i = 0; i < productsIds.length; i++) {
-                    var product = app.Products.products.filter({
-                        field: 'Id',
-                        operator: 'eq',
-                        value: productsIds[i]
-                    });
+                    var productIndex = productsDataIds.indexOf(productsIds[i]);
 
-                    if (product) {
-                        products.push(product);
+                    if (productIndex !== -1) {
+                        products.push(productsData[productIndex]);
                     }
                 }
 
