@@ -53,17 +53,6 @@ app.Products = (function () {
                 typeName: 'Products'
             },
             serverFiltering: true,
-            //change: function (e) {
-
-            //    if (e.items && e.items.length > 0) {
-            //        $('#recipeProducts').kendoMobileListView({
-            //            dataSource: e.items,
-            //            template: kendo.template($('#productsTemplate').html())
-            //        });
-            //    } else {
-            //        $('#recipeProducts').empty();
-            //    }
-            //},
             sort: { field: 'CreatedAt', dir: 'desc' }
         });
 

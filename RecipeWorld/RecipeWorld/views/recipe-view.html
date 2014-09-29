@@ -1,11 +1,16 @@
-<div data-role="view" data-layout="default" data-model="app.Recipe" data-title="Recipe" data-init="app.Recipe.init" data-show="app.Recipe.show">
+<div data-role="view" data-layout="default" data-model="app.Recipe" data-init="app.Recipe.init" data-show="app.Recipe.show">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-bind="text: Name"></span>
+            <button data-role="backbutton" data-align="left">Back</button>
+        </div>
+    </header>
     <div id="recipe">
         <div id="recipe-image-products" data-align="center">
             <img data-bind="attr: {src: PictureUrl}" alt="styles/images/default.png" />
         </div>
         <div id="recipeContent">
-            <ul data-role="listview" data-bind="source: ProductsData" data-template="productsTemplate" id="recipeProducts">
-            </ul>
+            <ul data-role="listview" data-bind="source: ProductsData" data-template="productsTemplate" id="recipeProducts"></ul>
         </div>
     </div>
 </div>

@@ -101,6 +101,6 @@ app.Recipes = (function () {
         };
     })();
     
-    kendo.bind($('recipes'), recipesModel);
+    kendo.bind($('#recipes'), recipesModel);
     return recipesModel;
 })();
