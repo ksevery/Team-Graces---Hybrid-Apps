@@ -4,6 +4,7 @@ app.Camera = (function () {
     var cameraView = kendo.observable({
         addImage: function () {
 
+
             var success = function (data) {
                 app.everlive.Files.create({
                     Filename: Math.random().toString(36).substring(2, 15) + ".jpg",
