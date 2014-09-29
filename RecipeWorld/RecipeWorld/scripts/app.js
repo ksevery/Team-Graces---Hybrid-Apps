@@ -55,10 +55,6 @@ window.app = (function (win) {
             };
 
             if (confirmed === true || confirmed === 1) {
-                // Stop EQATEC analytics monitor on app exit
-                if (analytics.isAnalytics()) {
-                    analytics.Stop();
-                }
                 AppHelper.logout().then(exit, exit);
             }
         }, 'Exit', ['OK', 'Cancel']);

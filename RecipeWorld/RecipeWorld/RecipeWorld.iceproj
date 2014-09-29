@@ -175,11 +175,12 @@
     <Content Include="scripts\products.js" />
     <Content Include="scripts\recipe.js" />
     <Content Include="scripts\recipes.js" />
-    <Content Include="scripts\signup.js" />
+    <Content Include="scripts\Signup.js" />
     <Content Include="styles\images\default.jpg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="styles\main.css" />
+    <Content Include="views\add-recipe-view.html" />
     <Content Include="views\recipe-view.html" />
     <Content Include="views\recipes-view.html" />
     <Content Include="views\signup-view.html" />

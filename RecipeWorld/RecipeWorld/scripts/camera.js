@@ -1,12 +1,11 @@
-(function () {
-    var everlive = new Everlive("UaQVFmYbtMPgqUG0");
+var app = app || {};
 
-  
-    window.listView = kendo.observable({
+app.Camera = (function () {
+    var cameraView = kendo.observable({
         addImage: function () {
 
             var success = function (data) {
-                everlive.Files.create({
+                app.everlive.Files.create({
                     Filename: Math.random().toString(36).substring(2, 15) + ".jpg",
                     ContentType: "image/jpeg",
                     base64: data
@@ -28,5 +27,7 @@
             navigator.camera.getPicture(success, error, config);
         }
     });
-    kendo.bind(? ?);
+
+    kendo.bind($('#add-recipe'), cameraView);
+    return cameraView;
 }())
