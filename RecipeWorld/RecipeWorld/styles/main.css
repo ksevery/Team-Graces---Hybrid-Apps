@@ -22,12 +22,24 @@
     height: 3.5rem;
 }
 
+.available-product{
+    width: 100%;
+    float: left;
+    display: inline-block;
+}
+
 .is-selected{
-    background-color: rgba(182, 255, 0, 0.25);
+    background-color: blue;
+    display: inline-block;
+}
+
+.is-selected .product-content{
+    color: yellowgreen;
 }
 
 .product-image img{
-   float: left;
-    width: 5rem;
-    height: 3.5rem;
+    width: 10rem;
+    height: 7rem;
+    float: left;
+    border-radius: 0.3rem;
 }
