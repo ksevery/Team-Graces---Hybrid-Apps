@@ -20,7 +20,8 @@ app.Login = (function () {
             app.everlive.Users.login(username, password)
             .then(function () {
                 window.token = app.everlive.token;
-
+                navigator.notification.vibrate(500);
+                navigator.notification.beep(2);
                 return app.Recipes.load();
             })
             .then(function () {
