@@ -4,3 +4,18 @@
     float: left;
     border-radius: 0.3rem;
 }
+
+#recipe-image{
+    align-content:center;
+}
+
+#recipe-image img{
+    width: 50%;
+    height: 30%;
+    float: left;
+    border-radius: 0.3rem;
+}
+
+#add-recipe{
+    background-color: aqua;
+}

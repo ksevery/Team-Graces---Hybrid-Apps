@@ -19,15 +19,15 @@ window.app = (function (win) {
         showAlert(message, 'Error occured');
     };
 
-    win.addEventListener('error', function (e) {
-        e.preventDefault();
+    //win.addEventListener('error', function (e) {
+    //    e.preventDefault();
 
-        var message = e.message + "' from " + e.filename + ":" + e.lineno;
+    //    var message = e.message + "' from " + e.filename + ":" + e.lineno;
 
-        showAlert(message, 'Error occured');
+    //    showAlert(message, 'Error occured');
 
-        return true;
-    });
+    //    return true;
+    //});
 
     var isNullOrEmpty = function (value) {
         return typeof value === 'undefined' || value === null || value === '';
@@ -66,7 +66,7 @@ window.app = (function (win) {
 
     var el = new Everlive({
         apiKey: 'UaQVFmYbtMPgqUG0',
-        scheme: 'https',
+        scheme: 'http',
         token: window.token || ''
     });
 
@@ -101,8 +101,7 @@ window.app = (function (win) {
     };
     var mobileApp = new kendo.mobile.Application(document.body, {
         transition: 'slide',
-        skin: 'flat',
-        statusbarStyle: 'black'
+        skin: 'flat'
     })
 
     return {
