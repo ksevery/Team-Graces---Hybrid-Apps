@@ -29,17 +29,17 @@
 }
 
 .is-selected{
-    background-color: blue;
+    background-color: rgba(182, 255, 0, 0.31);
     display: inline-block;
 }
 
 .is-selected .product-content{
-    color: yellowgreen;
+    color: #000000;
 }
 
 .product-image img{
+   float: left;
     width: 10rem;
     height: 7rem;
-    float: left;
     border-radius: 0.3rem;
 }

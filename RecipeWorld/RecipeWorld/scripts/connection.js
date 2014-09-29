@@ -17,6 +17,7 @@
         states[Connection.CELL_4G] = 'Cell 4G connection';
         states[Connection.NONE] = 'No network connection';
 
+        document.getElementById('connection').style.color="green"
         document.getElementById('connection').innerHTML = 'Connection type: ' + states[networkState]
     }
 }())

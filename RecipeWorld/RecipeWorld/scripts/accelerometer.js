@@ -1,32 +1,34 @@
 /// <reference path="../kendo/js/jquery.min.js" />
 (function () {
     document.addEventListener("deviceready", onDeviceReady, false);
-    //device APIs are available
+    
 
-    function onDeviceReady() {
-        navigator.accelerometer.watchAcceleration(onSuccess, onError, { frequency: 100 });
-        $("#s").hide()
+   function onDeviceReady() {
+       navigator.accelerometer.watchAcceleration(onSuccess, onError, { frequency: 100 });
+       var salad = $('#recipe-image-products')
+        salad.hide();
     }
+  
+    
 
     var watchId = navigator.accelerometer.watchAcceleration(onSuccess, onError, { frequency: 100 });
-    // onSuccess: Get a snapshot of the current acceleration
+    
 
     function onSuccess(acceleration) {
-        var t = $("#t");
-        //t.html(acceleration.x + " " + acceleration.y + " " + acceleration.z);
-        var currentAcc = 1;
+        var products = $("#recipeContent");
+       
         if (acceleration.x < -10 || acceleration.x > 10) {
-            t.hide();
-            $("#s").show();
+            products.hide();
+            salad.show();
 
             navigator.accelerometer.clearWatch(watchId);
         }
+        setTimeout(function () {
+            products.show('slow')
+        }, 2000)
     }
-
-    // onError: Failed to get the acceleration
-    //
     function onError() {
-        $("#t").html("error")
+        //navigator.notification.alert("Error!")
     }
 
 }())
