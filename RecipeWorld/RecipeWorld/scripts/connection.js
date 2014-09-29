@@ -1,8 +1,6 @@
 (function () {
     document.addEventListener("deviceready", onDeviceReady, false);
-
-    // Cordova is loaded and it is now safe to make calls Cordova methods
-    //
+   
     function onDeviceReady() {
         checkConnection();
     }
@@ -19,6 +17,6 @@
         states[Connection.CELL_4G] = 'Cell 4G connection';
         states[Connection.NONE] = 'No network connection';
 
-        document.getElementById('connection').innerHTML = 'Connction type: ' + states[networkState]
+        document.getElementById('connection').innerHTML = 'Connection type: ' + states[networkState]
     }
 }())

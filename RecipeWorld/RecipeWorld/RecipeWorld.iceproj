@@ -180,6 +180,9 @@
     <Content Include="styles\images\default.jpg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="styles\images\greensalad.jpg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="styles\main.css" />
     <Content Include="views\add-recipe-view.html" />
     <Content Include="views\recipe-view.html" />
