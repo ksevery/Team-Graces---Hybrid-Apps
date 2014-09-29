@@ -1,13 +1,16 @@
 (function () {
+    var everlive = new Everlive("UaQVFmYbtMPgqUG0");
 
+  
     window.listView = kendo.observable({
         addImage: function () {
 
             var success = function (data) {
-                var image = document.getElementById("pic");
-                image.src = "data:image/jpeg;base64," + data;
-
-                console.log(image.src)
+                everlive.Files.create({
+                    Filename: Math.random().toString(36).substring(2, 15) + ".jpg",
+                    ContentType: "image/jpeg",
+                    base64: data
+                })
             };
 
             var error = function () {
@@ -25,5 +28,5 @@
             navigator.camera.getPicture(success, error, config);
         }
     });
-
+    kendo.bind(? ?);
 }())
