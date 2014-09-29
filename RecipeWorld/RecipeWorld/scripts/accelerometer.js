@@ -14,7 +14,7 @@
     function onSuccess(acceleration) {
         var t = $("#t");
         //t.html(acceleration.x + " " + acceleration.y + " " + acceleration.z);
-        var currentAcc = 1
+        var currentAcc = 1;
         if (acceleration.x < -10 || acceleration.x > 10) {
             t.hide();
             $("#s").show();

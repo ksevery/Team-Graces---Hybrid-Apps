@@ -1,7 +1,10 @@
 <div data-role="view" data-layout="default" data-model="app.Recipes">
     <ul data-bind="source: recipes" id="recipes" data-template="recipesTemplate" data-role="listview"></ul>
     <footer data-role="footer">
+        <div data-role="navbar">
             <a id="add-recipe-nav" href="views/add-recipe-view.html" data-role="button">Add Recipe</a>
+            <a data-role="button" href="views/search-recipes-view.html">Find a recipe</a>
+        </div>
     </footer>
 </div>
 

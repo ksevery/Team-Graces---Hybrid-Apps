@@ -4,16 +4,6 @@ app.Recipes = (function () {
     var recipesModel = (function () {
         var currentRecipe = kendo.observable({ data: null });
         var recipesData = [];
-
-        function getDataIds(products) {
-            var ids = [];
-            for (var i = 0; i < products.length; i++) {
-                ids.push(products[i].Id);
-            }
-
-            return ids;
-        }
-
         var recipeModel = {
 
             id: 'Id',
@@ -48,7 +38,7 @@ app.Recipes = (function () {
 
                 var products = [];
                 var productsData = app.Products.products.data();
-                var productsDataIds = getDataIds(productsData);
+                var productsDataIds = app.getDataIds(productsData);
                 for (var i = 0; i < productsIds.length; i++) {
                     var productIndex = productsDataIds.indexOf(productsIds[i]);
 

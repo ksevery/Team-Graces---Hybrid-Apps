@@ -173,6 +173,7 @@
     <Content Include="scripts\connection.js" />
     <Content Include="scripts\login.js" />
     <Content Include="scripts\products.js" />
+    <Content Include="scripts\recipe-search.js" />
     <Content Include="scripts\recipe.js" />
     <Content Include="scripts\recipes.js" />
     <Content Include="scripts\Signup.js" />
@@ -183,6 +184,7 @@
     <Content Include="views\add-recipe-view.html" />
     <Content Include="views\recipe-view.html" />
     <Content Include="views\recipes-view.html" />
+    <Content Include="views\search-recipes-view.html" />
     <Content Include="views\signup-view.html" />
     <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />

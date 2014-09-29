@@ -24,6 +24,22 @@ app.Products = (function () {
             },
             PictureUrl: function () {
                 return app.helper.resolvePictureUrl(this.get('Picture'));
+            },
+            RecipesData: function () {
+                var recipesIds = this.get('Recipes');
+
+                var recipes = [];
+                var recipesData = app.Products.products.data();
+                var recipesDataIds = app.getDataIds(recipesData);
+                for (var i = 0; i < recipesIds.length; i++) {
+                    var recipeIndex = recipesDataIds.indexOf(recipesIds[i]);
+
+                    if (recipeIndex !== -1) {
+                        recipes.push(recipesData[recipeIndex]);
+                    }
+                }
+
+                return products;
             }
         }
 

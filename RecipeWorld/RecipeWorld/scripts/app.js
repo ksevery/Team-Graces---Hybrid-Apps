@@ -100,6 +100,15 @@ window.app = (function (win) {
         skin: 'flat'
     })
 
+    var getDataIds = function getDataIds(items) {
+        var ids = [];
+        for (var i = 0; i < items.length; i++) {
+            ids.push(items[i].Id);
+        }
+
+        return ids;
+    };
+
     return {
         showAlert: showAlert,
         showError: showError,
@@ -108,6 +117,7 @@ window.app = (function (win) {
         mobileApp: mobileApp,
         helper: AppHelper,
         everlive: el,
+        getDataIds: getDataIds
         //getYear: getYear
         }
 })(window);
