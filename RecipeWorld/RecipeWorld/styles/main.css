@@ -23,12 +23,11 @@
 }
 
 .is-selected{
-    background-color: blue;
+    background-color: rgba(182, 255, 0, 0.25);
 }
 
 .product-image img{
-    width: 50%;
-    height: 30%;
-    float: left;
-    border-radius: 0.3rem;
+   float: left;
+    width: 5rem;
+    height: 3.5rem;
 }
