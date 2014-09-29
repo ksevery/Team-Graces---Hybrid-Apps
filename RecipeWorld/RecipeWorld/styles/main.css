@@ -25,3 +25,10 @@
 .is-selected{
     background-color: blue;
 }
+
+.product-image img{
+    width: 50%;
+    height: 30%;
+    float: left;
+    border-radius: 0.3rem;
+}
